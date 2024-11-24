@@ -30,11 +30,11 @@ var lastIndex=-1;
 function quoteOutput() {
 var index;
 do {
-    index=Math.round(Math.random()*quoteList.length);
+    index=Math.floor(Math.random()*quoteList.length);
 } while (lastIndex===index);
 
 lastIndex=index;
-// console.log(index);
+console.log(index);
 
 document.getElementById("quoteContent").innerHTML=quoteList[index].content;
 document.getElementById("quoteAuther").innerHTML=quoteList[index].auther;
