@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "system-ui";
+    src: url("../webfonts/Assistant-Regular.woff") format("woff")
+     url("../webfonts/Assistant-Regular.woff2") format("woff2") 
+     url("../webfonts/Assistant-Regular.ttf") format("type true");
+}
+body,
+html {
+    font-family:"system-ui",sans-serif ;
+
+
+}
+article{
+    h1{
+        font-size: 5rem;
+        font-weight: 900;
+    }
+    p{
+        font-size: 2.1875rem;
+    }
+    button{
+        color: white;
+        background-color: blue;
+        transition:background-color .3s ease-in-out ;
+        &:hover{
+            background-color: #008000;
+        }
+        
+    }
+    .quoteDiv{
+       #quoteContent, #quoteAuther{
+        font-size: 2.1875rem;
+       } 
+    }
+}
+
+
